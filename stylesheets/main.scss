@@ -1,0 +1,56 @@
+@import 'ui';
+
+ui-app > ui-container {
+  padding: 60px;
+
+  ui-container {
+    > div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #DDD 25%, transparent 25%, transparent 75%, #DDD 75%, #DDD),
+                  linear-gradient(45deg, #DDD 25%, transparent 25%, transparent 75%, #DDD 75%, #DDD);
+      background-position: 0 0, 10px 10px;
+      background-size: 20px 20px;
+    }
+  }
+}
+
+ui-input input {
+  width: 100%;
+}
+
+ui-form {
+  display: block;
+
+  > * + * {
+    margin-top: 12px;
+  }
+
+  ui-form-block {
+    display: block;
+
+    ui-form-label {
+      margin-bottom: 5px;
+      display: block;
+
+      + * {
+        width: 100%;
+      }
+    }
+  }
+
+  ui-form-inline {
+    display: flex;
+
+    ui-form-label {
+      margin-left: 10px;
+      line-height: 36px;
+    }
+  }
+
+  ui-form-label {
+    font-weight: 600;
+  }
+}
